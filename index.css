@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+
+}
+
+body{
+  background-color: rgb(122, 251, 24);
+}
+
+.main-container{
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 7px;
+  margin: 60px auto;
+  max-width: 400px;
+  max-height: 500px;
+  padding: 30px;
+  width: 70vw;
+  height: 40vh;
+  text-align: center;
+}
+
+.main-container h2{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 15px;
+}
+
+.main-container p{
+  font-family: sans-serif;
+}
+
+.roll-btn{
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px rgb(74, 3, 76);
+  white-space: nowrap;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(125, 3, 3);
+}
+
+.dice-container{
+  display: grid;
+  grid-template: auto auto /repeat(5, 1fr);
+  gap: 20px;
+
+}
+.dice-container button{
+  width: 40px;
+  height: 30px;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 3px;
+  border: 1px solid rgb(122, 251, 24);
+  cursor: pointer;
+  color: white;
+  background-color: rgb(74, 3, 76);
+  box-shadow: 0px 1px 2px ;
+}
+
+.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+
+
+  .roll-btn:focus {
+  outline: 2px solid white;
+  transition: outline-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 8px white;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); /* zoom in */
+  }
+  100% {
+    transform: scale(1); /* zoom back out */
+  }
+}
+
+.pulse {
+  animation: pulse 1s infinite ease-in-out;
+}
+.start-btn{
+   padding: 10px 15px;
+  border-radius: 5px;
+  border: 2px solid rgb(122, 251, 24);
+  white-space: nowrap;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(125, 3, 3);
+  margin-top: 20px;
+}
